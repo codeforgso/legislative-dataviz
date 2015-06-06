@@ -1,0 +1,50 @@
+/*
+	title  : layout.scss
+	package: billsonparade
+	author : nickmjones
+	version: 1.0
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  @include outer-container;
+  text-align: center;
+}
+
+section {
+  @include outer-container;
+  text-align: center;
+  margin-bottom: 3em;
+
+  .card {
+    @include span-columns(3);
+    @include omega(4n);
+    height: 4rem;
+    float: left;
+    color: #fff;
+    overflow: hidden;
+    
+    img {
+      float: left;
+    }
+
+    &.democratic {
+      background: $blue;
+    }
+    &.republican {
+      background: $red;
+    }
+    &.unaffiliated {
+      background: #888;
+    }
+  }
+
+  .test {
+    @include span-columns(6);
+    text-align: left;
+  }
+}
