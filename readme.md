@@ -5,9 +5,12 @@ Produced as part of the Code for Greensboro NDoCH Hackathon.
 
 ## Building the project
 
-- git clone this repo
-- bundle install
-- guard start
+- `git clone` this repo
+- `bundle install`
+- `figaro install` to create `config/application.yml`
+- You'll need an api key for the [Open State API](https://sunlightlabs.github.io/openstates-api/). Once you have it, place it into `config/application.yml`
+- `guard start`
+- Join #legislative-dataviz on [the CfG Slack](http://slack.codeforgreensboro.org), submit pull requests, and accept nothing less than total victory in all things
 
 ## Schemas
 ### Legislators
@@ -26,21 +29,9 @@ Produced as part of the Code for Greensboro NDoCH Hackathon.
 - @photo_url="http://www.ncga.state.nc.us/House/pictures/hiRes/699.jpg",
 - @url="http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=699", @created_at="2014-12-03 01:25:23",
 - @chamber="lower",
-- @offices=
-  [#<Hashie::Mash address="2402 Bothwell St., Greensboro, NC 27401"
-  email=nil
-  fax=nil
-  name="District Office"
-  phone="336-988-6001"
-  type="district">,
-  #<Hashie::Mash address="N.C. House of Representatives\n16 W. Jones Street, Room 1317\nRaleigh, NC 27601-1096"
-  email="Ralph.Johnson@ncleg.net"
-  fax=nil
-  name="Capitol Office"
-  phone="919-733-5902"
-  type="capitol">],
-- @suffixes="">
+- @offices=[...],
+- @suffixes=""
 
-## Other Fun Stuff
+## Other Fun Stuff/Notes
 
 - http://phear.io
