@@ -15,19 +15,26 @@ header {
   text-align: center;
 }
 
-section {
+.wrapper {
   @include outer-container;
-  text-align: center;
+}
+
+section {
   margin-bottom: 3em;
+
+  .bill-block {
+    clear: both;
+    margin: 0;
+  }
 
   .card {
     @include span-columns(3);
     @include omega(4n);
+    padding: $small-spacing;
     height: 4rem;
-    float: left;
-    color: #fff;
+    line-height: 2.5rem;
     overflow: hidden;
-    
+
     img {
       float: left;
     }
@@ -46,5 +53,11 @@ section {
   .test {
     @include span-columns(6);
     text-align: left;
+  }
+
+  &.grid {
+    .grid-sizer,
+    .grid-item { width: 20%; }
+    .grid-item--width2 { width: 40%; }
   }
 }

@@ -28,6 +28,7 @@ gem 'neat';
 gem 'bitters';
 gem 'high_voltage'
 gem 'clrs';
+gem "d3-rails"
 
 
 group :development do
