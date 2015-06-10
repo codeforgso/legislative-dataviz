@@ -3,11 +3,12 @@
 <head>
   <title>BillsOnParade</title>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body onload="initialize()">
 
 <div class="wrapper">
   <%= yield %>

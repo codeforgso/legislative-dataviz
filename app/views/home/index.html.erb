@@ -1,17 +1,12 @@
 
+<input id="address" type="text" placeholder="Enter your address"
+             onFocus="geolocate()" style="width:500px;"/>
+<!-- <button id="submitAdd" onclick="getCoordForAddress()">Submit</button> -->
+
+
+<h4 id="status"></h4>
+
 <section>
   <div id="myRep1"></div>
   <div id="myRep2"></div>
-</section>
-
-<section class="grid">
-
-  <%= @sorted.inspect %>
-
-  <% @counts.each do |count| %>
-    <div class="bill-block" style="background: #<%= random_hex %>; width: <%= count[1] %>px; height: <%= count[1] %>px">
-      <%= count[1] %>
-    </div>
-  <% end %>
-
 </section>
