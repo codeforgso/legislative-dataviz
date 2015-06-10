@@ -37,7 +37,7 @@ function displayReps(representatives) {
        var phone = representatives[rep].offices[0].phone;
        var email = representatives[rep].email;
        var address = representatives[rep].offices[0].address;
-       var ul = "<ul><li><a href=" + website + ">" + name +"</a></li><li>" + party + "</li><li>" + phone + "</li><li>" + email + "</li><li>" + address + "</li></ul><br>";
+       var ul = "<ul><li><a href=" + website + ">" + name +"</a></li><li>" + party + "</li><li><a href=\"tel:" + phone + "\">" + phone + "</a></li><li><a href=\"mailto:" + email + "\">" + email + "</a></li><li>" + address + "</li></ul><br>";
        document.getElementById(myRep).innerHTML = ul;
        repNum = "2";
    }
