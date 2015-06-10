@@ -35,3 +35,5 @@ Produced as part of the Code for Greensboro NDoCH Hackathon.
 ## Other Fun Stuff/Notes
 
 - http://phear.io
+- https://sunlightlabs.github.io/openstates-api/
+- https://open-nc.org/catalog/
