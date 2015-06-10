@@ -27,16 +27,24 @@ function getLegislatures(position) {
 function displayReps(representatives) {
 
     var repNum = "1";
+    var myRep = "";
+    var img = "";
+    var website = "";
+    var name = "";
+    var party = "";
+    var phone = "";
+    var email = "";
+    var address = "";
     for (var rep in representatives) {
 
-       var myRep = "myRep" + repNum;
-       var img = representatives[rep].photo_url;
-       var website = representatives[rep].url;
-       var name = representatives[rep].full_name;
-       var party = representatives[rep].party;
-       var phone = representatives[rep].offices[0].phone;
-       var email = representatives[rep].email;
-       var address = representatives[rep].offices[0].address;
+       myRep = "myRep" + repNum;
+       img = representatives[rep].photo_url;
+       website = representatives[rep].url;
+       name = representatives[rep].full_name;
+       party = representatives[rep].party;
+       phone = representatives[rep].offices[0].phone;
+       email = representatives[rep].email;
+       address = representatives[rep].offices[0].address;
        var ul = "<ul><li><a href=" + website + ">" + name +"</a></li><li>" + party + "</li><li><a href=\"tel:" + phone + "\">" + phone + "</a></li><li><a href=\"mailto:" + email + "\">" + email + "</a></li><li>" + address + "</li></ul><br>";
        document.getElementById(myRep).innerHTML = ul;
        repNum = "2";
