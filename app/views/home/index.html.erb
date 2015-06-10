@@ -1,17 +1,6 @@
+<div id="status"></div>
 
 <section>
   <div id="myRep1"></div>
   <div id="myRep2"></div>
-</section>
-
-<section class="grid">
-
-  <%= @sorted.inspect %>
-
-  <% @counts.each do |count| %>
-    <div class="bill-block" style="background: #<%= random_hex %>; width: <%= count[1] %>px; height: <%= count[1] %>px">
-      <%= count[1] %>
-    </div>
-  <% end %>
-
 </section>

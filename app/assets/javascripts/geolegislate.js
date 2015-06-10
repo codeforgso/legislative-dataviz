@@ -1,11 +1,15 @@
 var reps = {};
 
+window.onload = function() {
+  document.getElementById("status").innerHTML = "Fetching your representatives..."
+}
+
 //geolocation
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(getLegislatures);
     } else {
-      document.getElementById("myReps").innerHTML = "Geolocation is not supported by this browser.";
+      document.getElementById("status").innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
@@ -16,6 +20,7 @@ function getLegislatures(position) {
     if (xhr.readyState == 4 && xhr.status == 200) {
         reps = JSON.parse(xhr.responseText);
         displayReps(reps);
+        document.getElementById("status").innerHTML = ""
         }
     }
     xhr.open("GET", "http://openstates.org/api/v1/legislators/geo/?lat=" + position.coords.latitude + "&long=" + position.coords.longitude + "&apikey=c43a4b70a3494d0c8c7748950c305d2c", true);
