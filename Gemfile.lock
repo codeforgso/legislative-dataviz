@@ -346,3 +346,6 @@ DEPENDENCIES
   turbolinks (~> 2.5.2)
   twitter
   uglifier (~> 2.5.0)
+
+BUNDLED WITH
+   1.10.3
