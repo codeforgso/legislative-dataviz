@@ -9,7 +9,7 @@ Produced as part of the Code for Greensboro NDoCH Hackathon.
 - `bundle install`
 - `figaro install` to create `config/application.yml`
 - You'll need an api key for the [Open State API](https://sunlightlabs.github.io/openstates-api/). Once you have it, place it into `config/application.yml` as `SUNLIGHT_API_KEY:"your_key_goes_here"`
-- `rake db:migrate`
+- `rake db:create`
 - `guard start`
 - Join #legislative-dataviz on [the CfG Slack](http://slack.codeforgreensboro.org), submit pull requests, and accept nothing less than total victory in all things
 
@@ -36,3 +36,5 @@ Produced as part of the Code for Greensboro NDoCH Hackathon.
 ## Other Fun Stuff/Notes
 
 - http://phear.io
+- https://sunlightlabs.github.io/openstates-api/
+- https://open-nc.org/catalog/
