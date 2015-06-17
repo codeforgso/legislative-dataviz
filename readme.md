@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/codeforgso/legislative-dataviz.png?label=ready&title=Ready)](https://waffle.io/codeforgso/legislative-dataviz)
 ## Legislator Dashboard
 A dashboard that allows NC residents to quickly see what their representatives and lawmakers are up to. Will show your rep and lawmaker based on lat/lon position, x current bills being worked on by either, a trend line for their current activities, and possibly more.
 
