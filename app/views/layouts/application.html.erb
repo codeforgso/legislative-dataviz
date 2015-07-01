@@ -4,6 +4,13 @@
   <title>BillsOnParade</title>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+  <!-- Load Leaflet from CDN-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css" />
+  <script src="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
+  <!-- Load Esri Leaflet from CDN -->
+  <!-- we encourage you to replace 'latest' with a hardcode version number (like '1.0.0-rc.7') in production applications -->
+  <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0-rc.7/esri-leaflet.js"></script>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
