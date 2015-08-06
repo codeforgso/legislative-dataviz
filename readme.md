@@ -1,5 +1,5 @@
 ## Legislator Dashboard
-A dashboard that allows NC residents to quickly see what their representatives and lawmakers are up to. Will show your rep and lawmaker based on lat/lon position, x current bills being worked on by either, a trend line for their current activities, and possibly more.
+A dashboard that allows NC residents to quickly see who their representatives are and what they are up to. Visual representations of the relationships between representatives, subjects, and campaign finance will be built in. Future versions will include biographical information about the representatives, info about each elected position and a guide / path to running for different positions at the local and state level.
 
 Produced as part of the Code for Greensboro NDoCH Hackathon.
 
@@ -11,7 +11,7 @@ Produced as part of the Code for Greensboro NDoCH Hackathon.
 - You'll need an api key for the [Open State API](https://sunlightlabs.github.io/openstates-api/). Once you have it, place it into `config/application.yml` as `SUNLIGHT_API_KEY:"your_key_goes_here"`
 - `rake db:create`
 - `guard start`
-- Join #legislative-dataviz on [the CfG Slack](http://slack.codeforgreensboro.org), submit pull requests, and accept nothing less than total victory in all things
+- Join #legislative-dataviz on [the CfG Slack](http://slack.codeforgreensboro.org), create a branch for your additions, submit pull requests, and accept nothing less than total victory in all things
 
 ## Schemas
 ### Legislators
@@ -36,5 +36,6 @@ Produced as part of the Code for Greensboro NDoCH Hackathon.
 ## Other Fun Stuff/Notes
 
 - http://phear.io
-- https://sunlightlabs.github.io/openstates-api/
+- https://sunlightlabs.github.io/openstates-api/ [Legislative Data]
+- http://data.influenceexplorer.com/api [Campaign Finance Data]
 - https://open-nc.org/catalog/
