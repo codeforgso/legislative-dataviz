@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/codeforgso/legislative-dataviz.png?label=ready&title=Ready)](https://waffle.io/codeforgso/legislative-dataviz)
 ## Legislator Dashboard
 A dashboard that allows NC residents to quickly see who their representatives are and what they are up to. Visual representations of the relationships between representatives, subjects, and campaign finance will be built in. Future versions will include biographical information about the representatives, info about each elected position and a guide / path to running for different positions at the local and state level.
 
